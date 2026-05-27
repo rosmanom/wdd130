@@ -6,6 +6,12 @@
     --text-light: #FFFFFF;
     --text-dark: #1E1E24;
     --background-light: #F8F9FA;
+    --body-font: Arial, helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 * {
@@ -15,22 +21,20 @@
 }
 
 body {
-    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-    background-color: var(--background-light);
+    font-family: var(--body-font);
     color: var(--text-dark);
-    line-height: 1.6;
 }
 
 header,
 main,
 footer {
-    width: 840;
+    width: 840px;
     margin: 0 auto;
 }
 
 h1,
 h2 {
-    font: 1em sans-serif;
+    font-family: var(--body-font);
     color: var(--primary-color);
 }
 
@@ -42,11 +46,11 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
+.socialmedia  a{
     text-decoration: none;
 }
 
-.hero {
+.hero { 
     position: relative;
 }
 
@@ -67,7 +71,7 @@ h1 {
     color: #fff;
 }
 
-.hero article {
+.hero article img {
     float: right;
     width: 125px;
 }
