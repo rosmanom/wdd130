@@ -3,12 +3,7 @@
     --accent1-color: #F4A261;
     --accent2-color: #E76F51;
     --text-dark: #1E1E24;
-    --body-font: Arial, helvetica, sans-serif;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -22,60 +17,120 @@ body {
     color: var(--text-dark);
 }
 
-header,
-main,
-footer {
+/* Center the page */
+header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-h1,
-h2 {
-    font-family: var(--body-font);
-    color: var(--primary-color);
+/* Header: logo left, nav right */
+header {
+    background-color: var(--primary-color);
+    padding: 10px;
+    overflow: auto; /* clears floats */
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+.logo-box {
+    float: left;
+    width: 120px;
 }
 
-.socialmedia  a{
+.logo-box img {
+    width: 100%;
+}
+
+nav {
+    float: right;
+    margin-top: 30px;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
+    margin: 0 10px;
 }
 
-.hero { 
+/* Hero section */
+.hero {
     position: relative;
+    margin-top: 10px;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    display: block;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
+    left: 0;
     width: 100%;
-    padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: rgba(244, 162, 97, 0.8);
+    color: white;
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(11, 59, 95, 0.8);
+    color: white;
+    padding: 15px;
+    margin-top: -50px; /* roughly center */
 }
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 100px;
+    margin-left: 15px;
 }
-.hero article {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+
+.hero article p {
+    margin: 0;
+}
+
+/* History section */
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 20px 0 10px;
+}
+
+/* Adventure section (empty for now) */
+section:last-of-type {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
 }
