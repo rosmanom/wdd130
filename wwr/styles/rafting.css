@@ -17,13 +17,13 @@ body {
     color: var(--text-dark);
 }
 
-/* Center main content – optional max-width */
+
 header, main, footer {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* ---------- HEADER (CSS GRID) ---------- */
+
 header {
     background-color: var(--primary-color);
     padding: 10px 20px;
@@ -41,7 +41,7 @@ header {
     display: block;
 }
 
-/* Navigation (Flexbox) */
+
 nav {
     justify-self: end;
 }
@@ -104,7 +104,8 @@ nav a:hover {
 .hero article img {
     width: 100px;
     border-radius: 8px;
-    float: none; /* remove old float */
+    float: right;
+    margin-left: 15px;
 }
 
 .hero article p {
@@ -112,7 +113,7 @@ nav a:hover {
     margin: 0;
 }
 
-/* ---------- HISTORY SECTION (three columns) ---------- */
+
 section {
     margin: 40px 20px;
 }
@@ -143,7 +144,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* ---------- ADVENTURES SECTION (five figures) ---------- */
+
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -177,7 +178,7 @@ h2 {
     color: var(--primary-color);
 }
 
-/* ---------- FOOTER (Flex, social right) ---------- */
+
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -212,10 +213,10 @@ footer p {
 .socialmedia img {
     width: 32px;
     height: 32px;
-    filter: brightness(0) invert(1); /* makes icons white */
+    filter: brightness(0) invert(1);
 }
 
-/* ---------- RESPONSIVE ADJUSTMENTS ---------- */
+
 @media (max-width: 800px) {
     .history-content {
         grid-template-columns: 1fr;
