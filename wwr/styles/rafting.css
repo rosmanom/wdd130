@@ -423,8 +423,8 @@ button.submit-btn {
     transition: background 0.2s;
 }
 
-button.submit-btn:hover {
-    background-color: #1e2f4b;
+.map iframe {
+    border: 0;
 }
 
 
