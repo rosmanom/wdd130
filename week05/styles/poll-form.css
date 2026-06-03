@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+    gap: 1rem;
+}
+
+.form-item {
+    display: grid;
+    gap: 0.5rem;
+}
+
+/* On wider screens, labels go left, inputs right */
+@media (min-width: 500px) {
+    .form-item {
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 1rem;
+    }
+    label {
+        text-align: right;
+    }
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: Roboto, Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-item label {
+    font-weight: normal;
+    text-align: left;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1rem auto 0;
+    max-width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}

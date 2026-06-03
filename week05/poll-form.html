@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    <main>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+        <form>
+            <div class="form-item">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-item">
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </div>
+
+            <div class="form-item">
+                <label for="quantity">Select quantity:</label>
+                <select name="quantity" id="quantity">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="browser">What is your favorite internet browser?</label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="edge">Edge</option>
+                    <option value="brave">Brave</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="checkbox" id="pet" name="pet">
+                <label for="pet">Do you have a household pet?</label>
+            </div>
+
+            <div class="form-item">
+                <label for="places">List the places you have lived:</label>
+                <textarea id="places" name="places" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+            </div>
+
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>Thank you for your feedback!</p>
+    </footer>
+</body>
+</html>
