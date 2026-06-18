@@ -444,3 +444,89 @@ button.submit-btn {
         gap: 0.5rem;
     }
 }
+
+/* the trips*/
+
+.trips-hero {
+    background: url('images/hero-trips.jpg') no-repeat center center/cover;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.trips-hero .hero-content {
+    background: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 8px;
+}
+.cta-button {
+    display: inline-block;
+    background: #ff5722;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.cta-button:hover {
+    background: #e64a19;
+}
+
+.trip-grid h2 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem 2rem;
+}
+.trip-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.trip-card h3 {
+    margin: 0.5rem 0;
+}
+
+.trip-table-section {
+    padding: 0 2rem 2rem;
+}
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+}
+.trip-table th {
+    background: #2c3e50;
+    color: white;
+}
+.trip-table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
